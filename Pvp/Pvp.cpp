@@ -16,7 +16,7 @@ struct Personaje { //Estructura de los personajes
 int calcularDanio(int ataque, int defensa) {  // Funcion para calcular daño
 
     int danio = ataque - defensa;
-    return (danio > 0) ? danio : 0;
+    return (danio > 0) ? danio : 0; // Esta funcion la hice apoyandome de este codigo de la pagina https://platzi.com/tutoriales/1740-lenguaje-c-2019/8978-cuando-y-como-usar-el-signo-en-programacion/#:~:text=es%20el%20signo%20de%20interrogaci%C3%B3n,lo%20que%20se%20esta%20haciendo.el 29 de abril de 2025
 }
 
 void mostrarEstado(const Personaje& p) { // Mostrar estado de jugadores el setw es para marcar un espaciado determinado para cada variable al momento de ejecutar
@@ -70,6 +70,7 @@ int main() {
 
     cout << "\n--- ESTADO FINAL---\n";
     mostrarEstado(p1);
+    // Para Algunas partes del codigo me base en ejemplos de https://es.stackoverflow.com/questions/500730/c%C3%B3mo-puedo-generar-un-numero-aleatorio-entre-100-y-100 el -29-04-2025
     mostrarEstado(p2);
 
 
